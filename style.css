@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 100px;
+    background-color: #fdbf41;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.navbar .container .logo {
+    width: 15%;
+}
+
+.navbar .container .logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.navbar .container .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .container .links li {
+    list-style: none;
+}
+
+.navbar .container .links li a {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0 10px;
+    color: #3d2514;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", Sans-serif;
+    letter-spacing: 2.6px;
+    transition: color .3s ease-in-out;
+}
+
+.navbar .container .links li a:hover {
+    color: #f76c09;
+}
+
+/* HERO  */
+.hero {
+    background: url("img/banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 60px;
+}
+
+.hero .container .text {
+    flex-basis: 45%;
+}
+
+.hero .container .text p {
+    font-size: 18px;
+    font-family: "Bebas Neue", Sans-serif;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+.hero .container .text h1 {
+    font-size: 130px;
+    font-family: "Alfa Slab One", Sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #3d2514;
+}
+
+.hero .container .img {
+    flex-basis: 45%;
+}
+
+.hero .container .img img {
+    width: 500px;
+}
