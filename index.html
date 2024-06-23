@@ -6,48 +6,291 @@
     <title>Burger House</title>
     <!-- CSS LINK  -->
     <link rel="stylesheet" href="style.css" />
+    <!-- FONT AWESOME CDN LINK  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- ANIMATE ON SCROLL CDN LINK CSS   -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NAVBAR -->
     <div class="navbar">
       <div class="container">
         <!-- LOGO -->
-        <div class="logo">
+        <a class="logo" href="#">
           <img src="img/Logo.png" alt="" />
-        </div>
+        </a>
         <!-- LINKS -->
         <ul class="links">
           <li>
             <a href="#">home</a>
           </li>
           <li>
-            <a href="#">menu</a>
+            <a href="#menu">menu</a>
           </li>
           <li>
-            <a href="#">testy burger</a>
+            <a href="#testy-burger">testy burger</a>
           </li>
           <li>
-            <a href="#">event</a>
+            <a href="#events">event</a>
           </li>
           <li>
-            <a href="#">order</a>
+            <a href="#orders">order</a>
           </li>
         </ul>
+        <!-- TOGGLE MENU BTN  -->
+        <button class="toggle-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
     <!-- HERO -->
-    <div class="hero">
+    <section class="hero">
       <div class="container">
         <!-- TEXT COLUMN -->
-        <div class="text">
+        <div class="text" data-aos="fade-up">
           <p>It is a good time for the great taste of burgers</p>
           <h1>Burger</h1>
         </div>
         <!-- IMG COLUMN  -->
-        <div class="img">
+        <div class="img" data-aos="fade-up">
           <img src="img/burger.png" alt="" />
         </div>
       </div>
-    </div>
+    </section>
+    <!-- MENU  -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="row">
+          <!-- COLUMN LEFT -->
+          <div class="col-2" data-aos="fade-right">
+            <div class="menu-1">
+              <span>Try it today</span>
+              <p>Most Popular Burger</p>
+            </div>
+          </div>
+          <!-- COLUMN RIGHT -->
+          <div class="col-2">
+            <!-- COLUMN 1 -->
+            <div class="menu-2" data-aos="fade-left">
+              <span>Try it today</span>
+              <p>More fun more taste</p>
+            </div>
+            <!-- COLUMN 2 -->
+            <div class="menu-3" data-aos="fade-left">
+              <span>Try it today</span>
+              <p>Fresh & Chili</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-center" data-aos="fade-up">
+          <button class="btn-primary">always tasty burger</button>
+        </div>
+      </div>
+    </section>
+    <!-- TESTY BURGER  -->
+    <section class="testy-burger" id="testy-burger">
+      <div class="container">
+        <!-- SECTION TITLE  -->
+        <div class="section-title" data-aos="fade-up">
+          <h1>choose & enjoy</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            vel blanditiis minima quaerat voluptatum neque, voluptate culpa
+            tempora nam autem animi tempore ipsum? Harum, nisi!
+          </p>
+        </div>
+        <!-- BURGERS LIST -->
+        <div class="row">
+          <!-- BURGER 1 -->
+          <div class="col-3 burger" data-aos="fade-right">
+            <div class="burger-img">
+              <img src="img/burger-4.png" alt="" />
+            </div>
+            <h3>the bun jovi burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              modi.
+            </p>
+            <button class="btn-primary">order now</button>
+          </div>
+          <!-- BURGER 2 -->
+          <div class="col-3 burger" data-aos="fade-up">
+            <div class="burger-img">
+              <img src="img/burger-6.png" alt="" />
+            </div>
+            <h3>the girl thrill burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              modi.
+            </p>
+            <button class="btn-primary">order now</button>
+          </div>
+          <!-- BURGER 3 -->
+          <div class="col-3 burger" data-aos="fade-left">
+            <div class="burger-img">
+              <img src="img/burger-5.png" alt="" />
+            </div>
+            <h3>the iceburg burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              modi.
+            </p>
+            <button class="btn-primary">order now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EVENTS  -->
+    <section class="events" id="events">
+      <div class="container">
+        <div class="row">
+          <!-- COLUMN LEFT  -->
+          <div class="col-2">
+            <div class="section-title" data-aos="fade-right">
+              <h4>discover</h4>
+              <h1>upcoming events</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                veritatis molestiae ut repellendus quaerat. Itaque ab qui
+                maiores reiciendis, aut nesciunt amet vero animi, dicta laborum
+                accusantium blanditiis, temporibus nam?
+              </p>
+            </div>
+            <button class="btn-primary" data-aos="fade-up">see more</button>
+          </div>
+          <!-- COLUMN RIGHT  -->
+          <div class="col-2" data-aos="fade-left">
+            <img src="img/burger-7.png" class="event-img" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ORDERS  -->
+    <section class="orders" id="orders">
+      <div class="container">
+        <div class="row">
+          <!-- ORDER 1 -->
+          <div class="col-3">
+            <div class="order" data-aos="fade-up">
+              <div class="order-icon">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, rem.
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="order-img">
+                <img src="img/test-1.png" alt="" />
+              </div>
+            </div>
+            <div class="order-info">
+              <h4>Shams W.Pawel</h4>
+              <p>Founder & CEO of XpeedStudio</p>
+            </div>
+          </div>
+          <!-- ORDER 2 -->
+          <div class="col-3">
+            <div class="order" data-aos="fade-up">
+              <div class="order-icon">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, rem.
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="order-img">
+                <img src="img/test-2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="order-info">
+              <h4>Shams W.Pawel</h4>
+              <p>Founder & CEO of XpeedStudio</p>
+            </div>
+          </div>
+          <!-- ORDER 3 -->
+          <div class="col-3">
+            <div class="order" data-aos="fade-up">
+              <div class="order-icon">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, rem.
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="order-img">
+                <img src="img/test-3.jpg" alt="" />
+              </div>
+            </div>
+            <div class="order-info">
+              <h4>Shams W.Pawel</h4>
+              <p>Founder & CEO of XpeedStudio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- COLUMN 1 -->
+          <div class="col-2" data-aos="fade-up">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              at tenetur quis quae corrupti consequuntur voluptate optio
+              incidunt nesciunt debitis!
+            </p>
+            <span>&copy; mobile code 2024. all rights reserved.</span>
+          </div>
+          <!-- COLUMN 2 -->
+          <div class="col-2" data-aos="fade-up">
+            <ul>
+              <li>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>Manche Road, California, USA</span>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>info@mobilecode.com</span>
+              </li>
+            </ul>
+            <!-- FOOTER ICONS  -->
+            <div class="footer-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ANIMATE ON SCROLL CDN SCRIPT LINK -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SCRIPT LINK -->
+    <script src="script.js"></script>
   </body>
 </html>
